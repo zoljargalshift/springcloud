@@ -1,1 +1,10 @@
-greeting: Hello from Service A
+greeting: Hello from Service A, with @RefreshScope
+
+server:
+  port: 8090
+
+management:
+  endpoints: 
+    web: 
+      exposure:
+        include: refresh
